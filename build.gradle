@@ -1,4 +1,9 @@
 apply plugin: 'java'
+apply plugin: 'pmd'
+
+repositories {
+	mavenCentral()
+}
 
 task customJavadoc(type: Javadoc) {
     source = sourceSets.main.allJava
